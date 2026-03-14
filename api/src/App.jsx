@@ -71,7 +71,7 @@ function App() {
       <ul>
         {moviesList.map((movie, index) => (
           <li key={index} style={{ marginBottom: "10px" }}>
-            <strong>{movie.Title}</strong> | {movie.Director} ({movie.Date}) | Duration: {movie.Duration} |Showing {movie.Showing}
+            <strong>{movie.Title}</strong> | {movie.Director} ({movie.Date}) | Duration: {movie.Duration} |Showing: {movie.Showing}
             <button onClick={() => startEdit(index)} style={{ marginLeft: "15px", color: "blue" }}>Edit</button>
             <button onClick={() => deleteMovie(index)} style={{ marginLeft: "5px", color: "red" }}>Delete</button>
           </li>
